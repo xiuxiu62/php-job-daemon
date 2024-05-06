@@ -1,7 +1,6 @@
 use daemonize::Daemonize;
-use std::{fs::{File, OpenOptions}, io, process::Command};
+use std::{fs::File, io, process::Command};
 
-const NAME: &str = "php-job-runner";
 const WORKING_DIRECTORY: &str = "/var/www/html";
 const COMMAND: &str = "php artisan schedule:run";
 
